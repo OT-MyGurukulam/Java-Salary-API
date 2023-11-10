@@ -107,3 +107,15 @@ sudo systemctl start salary-api
 sudo systemctl enable salary-api
 sudo systemctl status salary-api
 sudo systemctl restart salary-api
+
+# Update package list
+sudo apt update
+
+# Install figlet and lolcat
+sudo apt install -y figlet lolcat
+
+# Add the figlet and lolcat command to .bashrc
+echo 'figlet -f slant -c "SALARY OT-MICROSERVICES" | lolcat' >> ~/.bashrc
+
+# Reload .bashrc to apply changes
+source ~/.bashrc
